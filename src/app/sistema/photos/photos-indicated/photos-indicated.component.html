@@ -1,0 +1,21 @@
+<!-- <app-photos [photos]="photos"></app-photos> -->
+
+<ol class="list-unstyled row">
+        <li *ngFor="let photo of photos; let i=index" class="col-3">
+            <div *ngIf="i < 8">
+                <div class="ui card">
+                <a class="image" href="#">
+                    <img [src]="photo.urls.small">
+                </a>
+                <div class="content">
+                    <a class="header" href="#">{{photo.user.name}}</a>
+                    <div class="meta">
+                    <a>{{photo.user.bio}}</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </li>
+      </ol>
+
+

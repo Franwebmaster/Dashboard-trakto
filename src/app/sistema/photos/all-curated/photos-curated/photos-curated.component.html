@@ -1,0 +1,7 @@
+<ol class="card--grid list-unstyled" style="position: relative;">
+    <li class="row" *ngFor="let cols of rows">
+        <div class="col-4" *ngFor="let photo of cols">
+                <app-photo class="card" [url]="photo.urls.small" [description]="photo.description" [title]="photo.user.name" [bio]="photo.user.bio"></app-photo>
+        </div>
+    </li>
+</ol>

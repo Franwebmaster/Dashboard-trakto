@@ -1,0 +1,51 @@
+.card--grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    /* height: 0; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+app-photo.card {
+    width: 478px;
+    position: relative;
+    margin-bottom: 43px;
+    border-radius: .5rem;
+    margin-right: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+
+
