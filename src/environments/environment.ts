@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBase: 'https://us-central1-trakto-dev.cloudfunctions.net/unsplashApi/api/v1/photos/'
 };
 
 /*
