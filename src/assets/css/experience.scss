@@ -355,6 +355,29 @@ body {
     transition: all ease 500ms;
 }
 
+.io.botoes.transparente.preto .botao,
+.io.buttons.transparent .button,
+.io.botao.transparente.preto,
+.io.button.transparent {
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: black;
+	text-shadow: none;
+    background-image: none;
+    transition: all ease 500ms;
+}
+
+.io.botoes.transparente.preto .botao:hover,
+.io.buttons.transparent .button:hover,
+.io.botao.transparente.preto:hover,
+.io.button.transparent:hover {
+    background-color: rgba(247, 247, 247, 0.96);
+    border-color: rgba(247, 247, 247, 0.96);
+	color: black;
+    text-shadow: none;
+    transition: all ease 500ms;
+}
+
 .io.botoes.amarelo .botao:focus,
 .io.buttons.yellow .button:focus,
 .io.botao.amarelo:focus,
@@ -962,7 +985,7 @@ body {
     overflow: hidden;
     z-index: 6;
     width: 100%;
-	height: 726px;
+	height: 744px;
     padding: 58px 87px;
     background: #fff;
     border-radius: 10px;
@@ -973,6 +996,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		margin-bottom: 40px;
 
 		h5 {
 			font-size: 18px;
@@ -1391,7 +1415,7 @@ body {
     background: #fff;
     padding: 0;
 	border: none;
-	margin-bottom: 32px;
+	margin-bottom: 25px;
     border-radius: .28571429rem;
 	border: 1px solid #E0E6ED;
     -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
@@ -1435,7 +1459,7 @@ body {
     border-top: 1px solid rgba(34,36,38,.1);
     background: 0 0;
     margin: 0;
-    padding: 1em 1em;
+    padding: 0.6em 1em;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 1em;
@@ -1447,8 +1471,8 @@ body {
 }
 
 .ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
-    font-weight: 700;
-    font-size: 1.28571429em;
+    font-weight: 800;
+    font-size: 15px;
     margin-top: -.21425em;
     line-height: 1.28571429em;
 }
@@ -1461,7 +1485,7 @@ body {
     font-size: 1em;
 	color: rgba(0,0,0,.4);
 	white-space: nowrap;
-    width: 100px;
+    width: 257px;
     overflow: hidden;
     text-overflow: ellipsis
 }
