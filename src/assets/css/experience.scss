@@ -672,8 +672,8 @@ body {
 
 	@include for-phone-only {
 		// background: black;
-		background-position: 51% -7px;
-		background-size: 100%;
+		background-position: 220% 3px;
+		background-size: 95%;
 	}
 
 	@include for-tablet-portrait-up {
@@ -709,9 +709,13 @@ body {
 
 	@include for-phone-only {
 		// background: black;
-		margin: 50px 25px 0;
+		margin: -86px 25px 0;
 		h2 {
-			font-size: 38px;
+			font-size: 26px;
+		}
+
+		p {
+			font-size: 26px ;
 		}
 	}
 
@@ -886,24 +890,159 @@ body {
     margin: 0 auto;
 
 	@include for-phone-only {
+		.highlight__media {
+			padding: 33px 21px !important;
+			height: 100% !important;
+
+			.title {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			h5 {
+				font-size: 14px !important;
+			}
+
+			.list-unstyled {
+				flex-direction: column;
+
+				.col-3 {
+					max-width: 100% !important;
+
+					.ui.card {
+						width: 100% !important;
+					}
+				}
+			}
+				
+
+		}
+
+		.row {
+			flex-wrap: nowrap;
+
+			app-photo.card {
+				width: 354px;
+				margin: 0;
+
+				.wrapper {
+					transform: scale(0.9);
+
+					.info {
+						opacity: 1;
+						-webkit-transform: translateY(0px);
+					}
+				}
+			}
+		}
 		// background: black;
 		padding-left: 22px !important;
 		padding-right: 22px !important;
 	}
 
 	@include for-tablet-portrait-up {
+		.highlight__media {
+			padding: 58px 32px !important;
+
+			.title {
+				h5 {
+					font-size: 14px !important;
+				}
+			}
+
+			.ui.card {
+				.image {
+					img {
+						height: 165px !important;
+					}
+				}
+				.content {
+					a {
+						font-size: 11px !important;
+					}
+				}
+				.meta {
+					width: 92px !important; 
+				}
+			}
+		}
+		.card--grid {
+			.row {
+				flex-wrap: nowrap;
+	
+				app-photo.card {
+					width: 354px;
+					margin: 0;
+	
+					.wrapper {
+						transform: scale(0.9);
+	
+						
+					}
+				}
+			}
+		}
 		// background: purple;
 		padding-left: 50px !important;
     	padding-right: 50px !important;
 	}
 
 	@include for-tablet-landscape-up {
+		.highlight__media {
+			padding: 58px 42px !important;
+		}
 		// background: yellow;
 		padding-left: 50px !important;
 		padding-right: 50px !important;
 	}
 	
 	@include for-desktop-up {
+		.highlight__media {
+			padding: 58px 87px !important;
+			.title {
+				h5 {
+					font-size: 18px !important;
+				}
+			}
+
+			.ui.card {
+				.image {
+					img {
+						height: 193px !important;
+					}
+				}
+
+				.content {
+					a {
+						font-size: 15px !important;
+					}
+				}
+
+				.meta {	
+					width: 257px !important; 
+				}
+			}
+		}
+		.card--grid {
+			.row {
+				flex-wrap: nowrap;
+	
+				app-photo.card {
+					width: 354px;
+					margin: 0;
+	
+					.wrapper:hover {
+						
+	
+						.info {
+							opacity: 1;
+							-webkit-transform: translateY(0px);
+						}
+					}
+				}
+			}
+		}
+		
 	  	// background: red;
 	  	max-width: 1560px;
 	  	padding-left: 15px !important;
