@@ -12,7 +12,7 @@ export class AllCuratedService {
   constructor(private http: HttpClient) { }
 
   getAllCurated() {
-    return this.http.get<Photo[]>(environment.apiBase + 'curated?per_page=10&page=4&order_by=popular');
+    return this.http.get<Photo[]>(environment.apiBase + 'curated?per_page=10&page=9&order_by=popular');
   }
 
   getPhotoPaginated(page:number) {

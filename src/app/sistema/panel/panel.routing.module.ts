@@ -13,7 +13,7 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                component: DashboardComponent
+                component: DashboardComponent,
             },
             {
                 path: 'footer',
@@ -22,10 +22,9 @@ const routes: Routes = [
             {
                 path: 'all',
                 component: AllCuratedComponent
-            } 
-        ]
-        
-    } ,
+            }
+        ]  
+    } 
     
 ]
 

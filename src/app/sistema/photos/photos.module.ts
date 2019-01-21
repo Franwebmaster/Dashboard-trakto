@@ -10,6 +10,7 @@ import { PhotosCuratedComponent } from './all-curated/photos-curated/photos-cura
 import { LoadButtonComponent } from './all-curated/load-button/load-button.component';
 import { PhotosIndicatedComponent } from './photos-indicated/photos-indicated.component';
 import { PhotosIndicatedCuratedComponent } from './photos-indicated/photos-indicated-curated/photos-indicated-curated.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PhotosIndicatedCuratedComponent } from './photos-indicated/photos-indic
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   exports: [
     PhotoComponent,

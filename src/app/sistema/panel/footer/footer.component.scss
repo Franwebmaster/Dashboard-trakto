@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: #2D03A8;
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+    .linha {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .linha-socais {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20em;
+
+        .sociais {
+            display: flex;
+            flex-direction: row;
+            margin-left: 60px;
+
+            .one {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    h4 {
+        color: #FFBA00;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: white;
+    }
+}

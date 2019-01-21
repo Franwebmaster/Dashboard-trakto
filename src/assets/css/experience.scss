@@ -14,7 +14,8 @@
 
 body {
 	font-size: 16px;
-    font-size: 1rem;
+	font-size: 1rem;
+	background: #EFF2F7;
 }
 
 @mixin for-phone-only {
@@ -1124,7 +1125,7 @@ body {
     overflow: hidden;
     z-index: 6;
     width: 100%;
-	height: 744px;
+	height: 765px;
     padding: 58px 87px;
     background: #fff;
     border-radius: 10px;
@@ -1150,12 +1151,26 @@ body {
 	}
 }
 
+.highlight__media__all {
+	position: relative;
+    overflow: hidden;
+    z-index: 6;
+    width: 100%;
+	height: 100%;
+    padding: 58px 87px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(132,146,166,.16);
+	box-shadow: 0 5px 20px 0 rgba(132,146,166,.16);
+}
+
 
  /*******************************
         Dashboard UI - Inspire
 *******************************/
 .features-inspired {
-	margin-bottom: 3em;
+	margin-bottom: 4em;
+    margin-top: 5em;
 }
 .ui.divider {
     margin: 1rem 0;
@@ -1556,12 +1571,32 @@ body {
 	border: none;
 	margin-bottom: 25px;
     border-radius: .28571429rem;
-	border: 1px solid #E0E6ED;
+	box-shadow: 0 1px 3px 0 #E0E6ED, 0 0 0 1px #E0E6ED;
     -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     transition: box-shadow .1s ease,transform .1s ease;
     transition: box-shadow .1s ease,transform .1s ease,-webkit-box-shadow .1s ease,-webkit-transform .1s ease;
     z-index: '';
+}
+
+.ui.card::before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 262px;
+    border-radius: .5rem;
+    background: rgba(22, 17, 68, 0.33);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;	
+}
+
+.ui.card:hover:before {
+	opacity: 1;
+	cursor: pointer;
 }
 
 .ui.card>.image, .ui.cards>.card>.image {
@@ -1650,3 +1685,73 @@ body {
     overflow: hidden;
     visibility: hidden;
 }
+
+
+
+.footer {
+	
+
+	@include for-phone-only {
+		// background: black !important;
+		.linha {
+			flex-direction: column !important;
+			align-items: center !important;
+
+			h4 {
+				font-size: 27px !important;
+				margin-top: 20px !important;
+			}
+
+			p {
+				font-size: 14px !important;
+			}
+		}
+
+		.linha-socais {
+			margin-top: 11em !important;
+		}
+	}
+
+	@include for-tablet-portrait-up {
+		// background: purple !important;
+		.linha {
+			flex-direction: row !important;
+			align-items: flex-start !important;
+			flex-wrap: wrap;
+
+			h4 {
+				font-size: 29px !important;
+				margin-top: 20px !important;
+			}
+
+			p {
+				font-size: 14px !important;
+			}
+		}
+
+		.linha-socais {
+			margin-top: 11em !important;
+			justify-content: center;
+		}
+		
+	}
+
+	@include for-tablet-landscape-up {
+		// background: yellow !important;
+		
+	}
+	
+	@include for-desktop-up {
+	  	// background: red !important;
+	  	
+	}
+
+	@include for-big-desktop-up {
+		
+		// background: blue;
+	  }
+  }
+
+
+
+  
