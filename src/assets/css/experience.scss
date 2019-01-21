@@ -663,7 +663,7 @@ body {
     position: relative;
     padding-top: 110px;
     margin-bottom: 55px;
-    background: url('../../assets/images/dashboard/png.png') 0 no-repeat;
+    background: url('../../assets/images/dashboard/person.svg') 0 no-repeat;
 	background-position: 122% -22px;
     background-size: 83%;
 }
@@ -1056,6 +1056,14 @@ body {
 	  }
   }
 
+  .container-galery-all {
+	max-width: 1410px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    /* margin: 0 auto; */
+    margin-top: 2em;
+  }
+
 // @media (max-width: 1023px) {
 // 	.container-galery {
 // 		max-width: 1140px;
@@ -1162,7 +1170,183 @@ body {
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 20px 0 rgba(132,146,166,.16);
 	box-shadow: 0 5px 20px 0 rgba(132,146,166,.16);
+
+	.title {
+		margin-bottom: 1em;
+	}
 }
+
+.container-galery {
+	max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+
+	@include for-phone-only {
+		.highlight__media__all {
+			padding: 33px 21px !important;
+			height: 100% !important;
+
+			.title {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			h5 {
+				font-size: 14px !important;
+			}
+
+			.list-unstyled {
+				flex-direction: column;
+
+				.col-3 {
+					max-width: 100% !important;
+
+					.ui.card {
+						width: 100% !important;
+					}
+				}
+			}
+				
+
+		}
+
+		.row {
+			flex-wrap: nowrap;
+
+			app-photo.card {
+				width: 354px;
+				margin: 0;
+
+				.wrapper {
+					transform: scale(0.9);
+
+					.info {
+						opacity: 1;
+						-webkit-transform: translateY(0px);
+					}
+				}
+			}
+		}
+		// background: black;
+		padding-left: 22px !important;
+		padding-right: 22px !important;
+	}
+
+	@include for-tablet-portrait-up {
+		.highlight__media__all {
+			padding: 58px 32px !important;
+
+			.title {
+				h5 {
+					font-size: 14px !important;
+				}
+			}
+
+			.ui.card {
+				.image {
+					img {
+						height: 165px !important;
+					}
+				}
+				.content {
+					a {
+						font-size: 11px !important;
+					}
+				}
+				.meta {
+					width: 92px !important; 
+				}
+			}
+		}
+		.card--grid {
+			.row {
+				flex-wrap: nowrap;
+	
+				app-photo.card {
+					width: 354px;
+					margin: 0;
+	
+					.wrapper {
+						transform: scale(0.9);
+	
+						
+					}
+				}
+			}
+		}
+		// background: purple;
+		padding-left: 50px !important;
+    	padding-right: 50px !important;
+	}
+
+	@include for-tablet-landscape-up {
+		.highlight__media__all {
+			padding: 58px 42px !important;
+		}
+		// background: yellow;
+		padding-left: 50px !important;
+		padding-right: 50px !important;
+	}
+	
+	@include for-desktop-up {
+		.highlight__media__all {
+			padding: 58px 87px !important;
+			.title {
+				h5 {
+					font-size: 18px !important;
+				}
+			}
+
+			.ui.card {
+				.image {
+					img {
+						height: 193px !important;
+					}
+				}
+
+				.content {
+					a {
+						font-size: 15px !important;
+					}
+				}
+
+				.meta {	
+					width: 257px !important; 
+				}
+			}
+		}
+		.card--grid {
+			.row {
+				flex-wrap: nowrap;
+	
+				app-photo.card {
+					width: 354px;
+					margin: 0;
+	
+					.wrapper:hover {
+						
+	
+						.info {
+							opacity: 1;
+							-webkit-transform: translateY(0px);
+						}
+					}
+				}
+			}
+		}
+		
+	  	// background: red;
+	  	max-width: 1560px;
+	  	padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	@include for-big-desktop-up {
+		padding: 20px;
+		// background: blue;
+	  }
+  }
 
 
  /*******************************
@@ -1755,3 +1939,55 @@ body {
 
 
   
+
+  .card--grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    /* height: 0; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+app-photo.card {
+    width: 478px;
+    position: relative;
+    margin-bottom: 43px;
+    border-radius: .5rem;
+    margin-right: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent !important;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0.125) !important;
+    border-radius: 0.25rem;
+}
+
+
+

@@ -5,9 +5,11 @@
                     <button class="all io botao transparente preto" [routerLink]="['']"> 
                     <i class="fa fa-long-arrow-left" aria-hidden="true"></i>Voltar</button>
                 </div>
-            <app-photos-curated [photos]="photos"></app-photos-curated>
+                <app-photos-curated [photos]="photos"></app-photos-curated>
 
-            <app-load-button (click)="load()" [hasMore]="hasMore"></app-load-button>
+                <app-load-button (click)="load()" [hasMore]="hasMore"></app-load-button>
         </div>
     </div>
 </section>
+
+<section>
