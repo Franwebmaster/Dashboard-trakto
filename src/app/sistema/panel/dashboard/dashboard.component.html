@@ -1,9 +1,23 @@
+<div class="containe">
+  <div #overlay class="overlay">
+    <img #imgTrakto class="screen" src="../../../../assets/images/toolbar/logo-trakto.svg" alt="Trakto logo">
+    <div class="intro">
+      <button #btnExplore class="myBtn" (click)="greenSock()">Explore</button>
+    </div>
+  </div>
+
+  <div #overlayTwo class="overlay-2"></div>
+</div>
+
+
+
+
 <section class="highlight">
     <section class="module">
-        <div class="container-welcome">
+        <div #containerHeader class="container-welcome">
           <div class="module__content">
             <h2 class="highlight__title">Bem-vinda,</h2>
-            <p class="highlight__description">
+            <p #containerP class="highlight__description">
                 &#60;Daniela&#62;<span>|</span>
             </p>
           </div>
@@ -14,7 +28,7 @@
         </div>
       </div>
     </section>
-		<div class="container-galery">
+		<div #containerG class="container-galery">
 			<div class="highlight__media">
 				<div class="title">
             <h5>Fotos escolhidas por nosso time</h5>

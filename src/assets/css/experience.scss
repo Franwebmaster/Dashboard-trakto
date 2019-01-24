@@ -706,7 +706,8 @@ body {
 	display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
+	margin: 0 auto;
+	transform: translate(0%, 110%);
 
 	@include for-phone-only {
 		// background: black;
@@ -732,7 +733,12 @@ body {
 	
 	@include for-desktop-up {
 	  	// background: red;
-	  	margin: 9.5em 4.3em;
+		  margin: 9.5em 4.3em;
+		  
+		  p {
+			opacity: 0;
+			transform: translate(0%, 120%);
+		  }
 	}
 
 	@include for-big-desktop-up {
@@ -888,7 +894,9 @@ body {
 	max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    margin: 0 auto;
+	margin: 0 auto;
+	opacity: 0;
+	transform: translate(0%, 130%);
 
 	@include for-phone-only {
 		.highlight__media {

@@ -1,0 +1,74 @@
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #3604C9;
+}
+
+.overlay p {
+    font-size: 125px;
+    font-weight: 800;
+}
+
+.overlay .screen {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 80%;
+    z-index: 2;
+    opacity: .2;
+    transform: translate(-50%, -50%);
+} 
+
+.overlay-2 {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+   background: #101010;
+}
+
+button {
+    display: block;
+    padding: 24px 48px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: white;
+    border:2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    background: none;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.myBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBtn:hover {
+    color: #101010;
+    cursor: pointer;
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.2s ease-out;
+}
+
+.myBtn:hover::before {
+    top: 0;
+}
